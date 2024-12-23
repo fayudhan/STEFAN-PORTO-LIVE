@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Awesome CDN -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dist/output.css" />
+    <title>Responsive Navbar</title>
+  </head>
+  <body class="bg-dark-blue">
+    <main class="relative">
+      <!-- Top Gradient Start -->
+      <img
+        src="assets/object-gradient-1.svg"
+        alt="object-gradient-1"
+        class="absolute right-0 top-0 z-0 h-auto max-w-[1053px] object-cover"
+      />
+
+      <!-- Top Gradient End -->
+
+      <!-- Navbar -->
+
+      <nav
+        id="navbar"
+        class="fixed top-0 z-50 w-full p-5 transition-colors duration-300 xl:px-px-120"
+      >
+        <div class="container mx-auto flex items-center justify-between">
+          <!-- Logo -->
+          <div class="flex justify-center">
+            <a href="#" class="cursor-pointer">
+              <img src="assets/stefan-logo.svg" alt="stefan-logo" />
+            </a>
+          </div>
+
+          <!-- Desktop Menu -->
+          <div class="hidden text-lg font-medium text-white lg:flex lg:gap-10">
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+          </div>
+
+          <!-- Mobile Menu Toggle Button -->
+          <div class="text-xl text-white lg:hidden">
+            <button id="menuToggle">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div
+          id="mobileMenu"
+          class="mt-6 hidden space-y-6 bg-dark-blue px-8 py-6 text-white lg:hidden"
+        >
+          <div class="flex flex-col space-y-10 text-left">
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero Section-->
+      <section
+        class="relative z-10 p-5 pb-[120px] pt-20 lg:pt-32 xl:px-px-120 xl:py-10 xl:pt-36"
+      >
+        <div
+          class="container mx-auto flex flex-col items-center justify-between xl:flex-row"
+        >
+          <!-- Left Side -->
+          <div class="flex flex-col gap-5 lg:flex-row">
+            <!-- Part One Left Side -->
+            <div
+              class="relative z-10 flex flex-col justify-center xl:w-[900px]"
+            >
+              <h2
+                class="mb-3 text-2xl font-semibold leading-snug text-gray-custom md:text-[2.94rem]"
+              >
+                UI/UX Designer
+              </h2>
+              <h3
+                class="mb-8 text-4xl font-semibold leading-snug text-white md:text-7xl lg:w-[600px] xl:text-[5rem]"
+              >
+                Stefan William
+              </h3>
+
+              <span class="inline-block h-2 w-[183px] bg-light-yellow"></span>
+              <p
+                class="mb-14 mt-10 text-lg font-normal leading-[2.25rem] text-gray-custom md:text-xl lg:w-[347px]"
+              >
+                Eget malesuada tortor ut sed. Tincidunt viverra malesuada nisl
+                vehicula vestibulum. Ut blandit fermentum, cursus nulla.
+                Imperdiet neque mi convallis quis interdum sagittis.
+              </p>
+
+              <button
+                class="flex items-center space-x-[77px] p-0 text-[20px] font-normal text-light-yellow hover:text-white"
+              >
+                <span>Let’s talk</span>
+                <img
+                  src="assets/arrow-right.svg"
+                  alt="Hero cta button"
+                  class="transform transition-transform duration-300 hover:translate-x-4"
+                />
+              </button>
+            </div>
+
+            <!-- Part Two Left Side -->
+            <div class="h-auto w-full rounded-lg xl:ml-[-32.4rem] xl:w-[510px]">
+              <img src="assets/stefan-picture.png" alt="Stefan William" />
+            </div>
+          </div>
+
+          <!-- Right Side -->
+          <div class="w-full">
+            <div
+              class="flex flex-col space-y-2 sm:justify-between sm:space-y-0 md:flex-row lg:flex-row lg:gap-10 lg:p-8 xl:flex-col xl:gap-32"
+            >
+              <div
+                class="flex flex-col items-center justify-between space-y-3 p-6 lg:p-0 xl:items-end"
+              >
+                <h4
+                  class="mb-3 max-w-[127px] text-center text-xl font-medium text-gray-custom md:text-2xl xl:text-right"
+                >
+                  Years of Experience
+                </h4>
+                <p class="text-6xl font-semibold text-white xl:text-[4.5rem]">
+                  3+
+                </p>
+              </div>
+
+              <div
+                class="flex flex-col items-center justify-between space-y-3 p-6 lg:p-0 xl:items-end"
+              >
+                <h4
+                  class="mb-3 max-w-[127px] text-center text-xl font-medium text-gray-custom md:text-2xl xl:text-right"
+                >
+                  Completed Projects
+                </h4>
+                <p class="text-6xl font-semibold text-white xl:text-[4.5rem]">
+                  220+
+                </p>
+              </div>
+
+              <div
+                class="flex flex-col items-center justify-between space-y-3 p-6 lg:p-0 xl:items-end"
+              >
+                <h4
+                  class="mb-3 max-w-[127px] text-center text-xl font-medium text-gray-custom md:text-2xl xl:text-right"
+                >
+                  Clients
+                </h4>
+                <p class="text-6xl font-semibold text-white xl:text-[4.5rem]">
+                  60+
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- First Left Gradient Start -->
+
+      <img
+        src="assets/object-gradient-2.svg"
+        alt="object-gradient-2"
+        class="absolute left-[14rem] top-[36rem] z-0 hidden h-auto max-w-[531px] xl:left-0 xl:block"
+      />
+
+      <!-- First Left Gradient End -->
+
+      <!-- Company Logo Section-->
+      <div
+        class="relative z-10 w-full bg-transparent-dark-blue xl:px-px-120 xl:py-[43px]"
+      >
+        <div class="container mx-auto">
+          <!-- Logo Grid -->
+          <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+            <div>
+              <img
+                src="assets/behance-logo.svg"
+                alt="behance-logo"
+                class="h-auto max-w-full"
+              />
+            </div>
+
+            <div>
+              <img
+                src="assets/dribble-logo.svg"
+                alt="dribble-logo"
+                class="h-auto max-w-full"
+              />
+            </div>
+            <div>
+              <img
+                src="assets/upwork-logo.svg"
+                alt="upwork-logo"
+                class="h-auto max-w-full"
+              />
+            </div>
+            <div>
+              <img
+                src="assets/fiverr-logo.svg"
+                alt="fiverr-logo"
+                class="h-auto max-w-full"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Services Section -->
+      <section
+        id="services"
+        class="relative z-10 p-5 pb-[118px] xl:px-px-120 xl:pt-[150px]"
+      >
+        <div
+          class="container mx-auto flex flex-col items-center justify-between xl:flex-row xl:gap-[79px]"
+        >
+          <!-- Left Side -->
+          <div class="mb-10 xl:mt-[-5rem] xl:w-[60%]">
+            <h2
+              class="mb-6 text-4xl font-semibold leading-relaxed text-white xl:mb-6 xl:text-[62px]"
+            >
+              My Awesome Service
+            </h2>
+            <p
+              class="text-lg font-normal leading-[2.25rem] text-gray-custom xl:w-full xl:text-xl xl:leading-9"
+            >
+              Eget malesuada tortor ut sed. Tincidunt viverra malesuada nisl
+              vehicula vestibulum. Ut blandit fermentum, cursus nulla. Imperdiet
+              neque mi convallis quis interdum sagittis.
+            </p>
+          </div>
+
+          <!-- Right Side (Image Boxes) -->
+          <div
+            id="services-container"
+            class="w-full justify-end space-y-5 md:grid md:grid-cols-2 md:space-y-0 lg:grid-cols-3 lg:gap-7 xl:flex xl:flex-col"
+          >
+            <!-- Content goes here -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="relative z-10 py-0 xl:px-px-120">
+        <div class="container mx-auto p-5">
+          <div
+            class="mb-6 flex flex-col justify-between gap-3 xl:mb-[4.5rem] xl:flex-row xl:gap-0"
+          >
+            <!-- Title and Link -->
+            <h2
+              class="text-left text-4xl font-semibold text-white xl:text-[3.9rem]"
+            >
+              Our Portfolio
+            </h2>
+            <a
+              href="#portfolio"
+              class="flex flex-row items-center justify-end space-x-6 text-xl font-normal text-light-yellow"
+            >
+              <span>See All</span>
+              <img
+                src="assets/arrow-right-alt.svg"
+                alt="arrow-right"
+                class="w-6"
+              />
+            </a>
+          </div>
+
+          <!-- Portfolio Grid -->
+          <div
+            id="portfolio-container"
+            class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3"
+          >
+            <!-- Content goes here -->
+          </div>
+        </div>
+      </section>
+
+      <!--  Right Gradient Start -->
+
+      <img
+        src="assets/object-gradient-3.svg"
+        alt="object-gradient-3"
+        class="absolute right-0 top-[100rem] z-0 h-auto"
+      />
+
+      <!--  Right Gradient End -->
+
+      <!-- Testimonials Section -->
+      <section
+        class="relative z-10 p-5 xl:px-px-120 xl:pb-[18rem] xl:pt-[9.5rem]"
+      >
+        <div
+          class="container mx-auto md:flex md:flex-row md:items-center md:gap-5 xl:gap-20"
+        >
+          <!-- Left Side Picture -->
+          <div class="flex justify-center">
+            <img
+              src="assets/jasmin-picture.png"
+              alt="Jasmin Picture"
+              class="mb-3 w-full xl:max-w-[400px]"
+            />
+          </div>
+
+          <!-- Right Side Testimonial Content -->
+          <div class="text-center lg:text-left xl:p-0">
+            <div class="relative">
+              <img
+                src="assets/quote-icon.svg"
+                alt="quote-icon"
+                class="mb-3 w-10 xl:mb-10 xl:w-16"
+              />
+              <blockquote
+                class="mb-10 max-w-[620px] text-2xl font-semibold leading-normal text-white sm:text-left xl:text-[2.8rem] xl:leading-[4.125rem]"
+              >
+                Stefan is a professional worker who always gives results that
+                are beyond our expectations, thanks for your services.
+              </blockquote>
+
+              <!-- Name and Profession -->
+              <div class="flex w-full justify-between">
+                <div>
+                  <h4 class="text-2xl font-semibold text-white">Jasmin</h4>
+                  <p class="text-xl text-gray-custom">Businessman</p>
+                </div>
+
+                <!-- Navigation Arrows -->
+                <div class="flex gap-6">
+                  <button>
+                    <img src="assets/arrow-left.svg" alt="arrow-left" />
+                  </button>
+                  <button>
+                    <img src="assets/arrow-right-alt.svg" alt="arrow-right" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Second Left Gradient Start -->
+
+      <img
+        src="assets/object-gradient-4.svg"
+        alt="object-gradient-4"
+        class="absolute left-0 top-[200rem] z-0 h-auto"
+      />
+
+      <!-- Second Left Gradient End -->
+
+      <!-- Contact Section -->
+      <section class="relative z-10 p-5 xl:px-px-120 xl:py-0">
+        <div
+          class="container mx-auto flex flex-col items-center justify-between gap-10 sm:flex-row xl:items-start xl:gap-0"
+        >
+          <!-- Left Side -->
+          <div
+            class="flex flex-col items-center gap-5 pt-20 text-center sm:items-start md:text-left xl:w-full xl:pt-0"
+          >
+            <h2
+              class="max-w-[40.25rem] text-center text-3xl font-semibold text-white sm:text-left md:text-4xl xl:mb-[4.4rem] xl:text-6xl xl:leading-normal"
+            >
+              Want to make an awesome and impactful product?
+            </h2>
+
+            <button
+              class="flex items-center gap-4 border-b-2 border-light-yellow bg-transparent pb-2 text-xl font-normal text-light-yellow hover:border-light-yellow/80 hover:text-light-yellow/80 focus:outline-none"
+            >
+              <span>Contact Us</span>
+              <img src="assets/arrow-right.svg" alt="arrow-right" />
+            </button>
+          </div>
+
+          <!-- Right Side -->
+          <div class="flex w-full justify-end">
+            <img
+              src="assets/laptop.png"
+              alt="Laptop Contact Image"
+              class="w-full lg:max-w-md xl:h-[591px] xl:w-[512px] xl:object-cover"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer
+      class="bg-[#091427] p-5 pb-[3.125rem] pt-[1.624rem] text-white lg:mt-[-6rem] xl:px-px-120"
+    >
+      <div class="container mx-auto">
+        <!-- Follow Us Title -->
+        <h3 class="mb-6 text-2xl font-semibold">Follow Us</h3>
+
+        <!-- Social Media Icons -->
+        <div class="flex justify-start gap-10">
+          <a href="https://facebook.com">
+            <img
+              src="/assets/facebook.svg"
+              alt="facebook"
+              class="w-[2.875rem]"
+            />
+          </a>
+          <a href="https://instagram.com">
+            <img
+              src="/assets/instagram.svg"
+              alt="instagram"
+              class="w-[2.875rem]"
+            />
+          </a>
+          <a href="https://linkedin.com">
+            <img
+              src="/assets/linkedin.svg"
+              alt="linkedin"
+              class="w-[2.875rem]"
+            />
+          </a>
+          <a href="https://slack.com">
+            <img src="/assets/slack.svg" alt="slack" class="w-[2.875rem]" />
+          </a>
+          <a href="mailto:your-email@example.com">
+            <img src="/assets/gmail.svg" alt="gmail" class="w-[2.875rem]" />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script/main.js"></script>
+  </body>
+</html>
